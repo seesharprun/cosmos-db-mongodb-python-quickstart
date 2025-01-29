@@ -21,7 +21,7 @@ This is a simple Express web application to illustrate common basic usage of Azu
 
 - [Docker](https://www.docker.com/)
 - [Azure Developer CLI](https://aka.ms/azd-install)
-- [Python 3.12](https://www.python.org/downloads/)
+- [Python 3.13](https://www.python.org/downloads/)
 
 ## Quickstart
 
