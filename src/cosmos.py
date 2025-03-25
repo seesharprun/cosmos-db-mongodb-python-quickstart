@@ -13,11 +13,9 @@ def runDemo(writeOutput):
 
     # <create_client>
     connection_string = os.getenv("CONFIGURATION__AZURECOSMOSDB__CONNECTIONSTRING")
-    if not connection_string:
-        raise EnvironmentError("Azure Cosmos DB for MongoDB connection string not set.")
-
     client = MongoClient(connection_string)
     # </create_client>
+    
     print(f"ENDPOINT:\t{client.HOST}:{client.PORT}")
 
     database_name = os.getenv("CONFIGURATION__AZURECOSMOSDB__DATABASENAME", "cosmicworks")
